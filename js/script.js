@@ -24,6 +24,9 @@ createApp({
     methods: {
         doneStatus(index) {
             this.tasks[index].done = !this.tasks[index].done;
+        },
+        delateTask(index) {
+            this.tasks.splice(index,1);
         }
     },
 }).mount('#app');

@@ -31,7 +31,7 @@
                                     <button class="btn btn-sm" :class="tasks[index].done ? 'btn-secondary' : 'btn-success'"  @click="doneStatus(index)">
                                         <i :class="tasks[index].done ? 'fas fa-x' : 'fas fa-check'"></i>
                                     </button>
-                                    <button class="btn btn-sm btn-danger">
+                                    <button class="btn btn-sm btn-danger" @click="delateTask(index)">
                                         <i class="fas fa-trash"></i>
                                     </button>
                                 </div>

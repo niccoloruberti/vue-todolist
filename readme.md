@@ -5,3 +5,4 @@ CONSEGNA: Rifare l'esercizio della to do list visto a lezione. Create un array d
 - utilizzando un v-for ciclo gli oggetti dell'array per scrivere i task nel DOM;
 - aggiungo un evento per modificare la proprietà done quando viene premuto il pulsante check;
 - inserisco una condizione per cui quando viene premuto il pulsante check e quindi cambia lo stato di done viene modificata anche l'icona;
+- inerisco un method per togliere dall'array un elemento tramite splice quando viene premuto il tasto elimina;
