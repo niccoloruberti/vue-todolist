@@ -25,21 +25,8 @@
                 <div class="row">
                     <div class="col-12">
                         <ul class="list-unstyled text-white">
-                            <li class="d-flex justify-content-between align-content-center py-3 border-bottom">
-                                <span>Andare a fare la spesa</span>
-                                <div class="bottoni">
-                                    <button class="btn btn-sm btn-success"><i class="fas fa-check"></i></button>
-                                    <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-                                </div>
-                            </li>
-                            <li class="d-flex justify-content-between align-content-center py-3 border-bottom">
-                                <span>Andare a fare la spesa</span>
-                                <div class="bottoni">
-                                    <button class="btn btn-sm btn-success"><i class="fas fa-check"></i></button>
-                                    <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
-                                </div>
-                            </li>                            <li class="d-flex justify-content-between align-content-center py-3 border-bottom">
-                                <span>Andare a fare la spesa</span>
+                            <li class="d-flex justify-content-between align-content-center py-3 border-bottom" v-for='(task, index) in tasks'>
+                                <span>{{ tasks[index].text }}</span>
                                 <div class="bottoni">
                                     <button class="btn btn-sm btn-success"><i class="fas fa-check"></i></button>
                                     <button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
@@ -59,6 +46,7 @@
                 </div>
             </div>
         </div>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script type="text/javascript" src="./js/script.js"></script>
     </body>
 </html>
