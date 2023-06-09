@@ -27,6 +27,16 @@ createApp({
         },
         delateTask(index) {
             this.tasks.splice(index,1);
+        },
+        addTask() {
+            if (this.text !== '') {
+                let obj = {
+                    text: this.text,
+                    done: false
+                }
+                this.tasks.push(obj);
+                this.text = '';
+            }
         }
     },
 }).mount('#app');
