@@ -8,15 +8,18 @@ createApp({
             tasks: [
                 {
                     text: 'fare la spesa',
-                    done: false
+                    done: false,
+                    editEnabled: false
                 },
                 {
                     text: 'lavare la macchina',
-                    done: false
+                    done: false,
+                    editEnabled: false
                 },
                 {
                     text: 'stendere i panni',
-                    done: false
+                    done: false,
+                    editEnabled: false
                 }
             ]
         }
@@ -37,6 +40,9 @@ createApp({
                 this.tasks.push(obj);
                 this.inputText = '';
             }
+        },
+        editEnabledStatus(index) {
+            this.tasks[index].editEnabled = !this.tasks[index].editEnabled
         }
     },
 }).mount('#app');
