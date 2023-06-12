@@ -26,7 +26,7 @@
                     <div class="col-12">
                         <ul class="list-unstyled text-white">
                             <li class="d-flex justify-content-between align-content-center py-3 border-bottom" v-for='(task, index) in tasks'>
-                                <span>{{ tasks[index].text }}</span>
+                                <span :class=" tasks[index].done ? 'task-done' : ''">{{ tasks[index].text }}</span>
                                 <div class="bottoni">
                                     <button class="btn btn-sm" :class="tasks[index].done ? 'btn-secondary' : 'btn-success'"  @click="doneStatus(index)">
                                         <i :class="tasks[index].done ? 'fas fa-x' : 'fas fa-check'"></i>

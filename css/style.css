@@ -12,3 +12,8 @@ body {
 .new-task input {
     width: 80%;
 }
+
+.task-done {
+    text-decoration: line-through;
+    color: grey;
+}
